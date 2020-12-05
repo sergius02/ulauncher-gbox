@@ -1,0 +1,18 @@
+{
+  "required_api_version": "^2.0.0",
+  "name": "GBox",
+  "description": "Launch easy your Gnome boxes with GBox",
+  "developer_name": "Sergio Fernández Celorio",
+  "icon": "images/icon.png",
+  "options": {
+    "query_debounce": 0.05
+  },
+  "preferences": [
+    {
+      "id": "gbox_launch_keyword",
+      "type": "keyword",
+      "name": "GBox",
+      "default_value": "box"
+    }
+  ]
+}
