@@ -1,6 +1,7 @@
 import logging
 import re
 from datetime import datetime
+from os.path import expanduser
 
 from ulauncher.api.client.EventListener import EventListener
 from ulauncher.api.client.Extension import Extension
@@ -40,7 +41,8 @@ class GBox(Extension):
         pattern = re.compile(re.escape("[") + "display")
 
         config_lines = []
-        with open("/home/sergio/.config/gnome-boxes/sources/QEMU Session") as boxesFile:
+        qemu_path = self.preferences.get("gbox_sessions_path")
+        with open(expanduser(qemu_path)) as boxesFile:
             config_lines = boxesFile.readlines()
 
         config_blocks = []

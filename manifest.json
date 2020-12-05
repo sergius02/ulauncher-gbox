@@ -13,6 +13,13 @@
       "type": "keyword",
       "name": "GBox",
       "default_value": "box"
+    },
+    {
+      "id": "gbox_sessions_path",
+      "type": "input",
+      "name": "QEMU Sessions",
+      "description": "The path to the QEMU Sessions",
+      "default_value": "~/.config/gnome-boxes/sources/QEMU Session"
     }
   ]
 }
